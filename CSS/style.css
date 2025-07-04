@@ -1,0 +1,33 @@
+h1{
+    color: yellowgreen;
+    background-color: aqua;
+}
+div{
+    background-color: rgb(79, 79, 158);
+    font-size: 25px;
+}
+
+
+
+.div1{
+    background-color: yellow;
+}
+.div2{
+    background-color: cadetblue;
+}
+.parent{
+    font-size: 25px;
+    border-top: red 10px solid;
+    border-bottom: yellow 10px dashed;
+    border-left: green 10px solid;
+    border-right: maroon 10px double;
+}
+.main{
+    height: 200px;
+    width: 300px;
+    border: 1px solid rgb(211, 203, 203);
+    text-align: justify;
+}
+.c{
+    text-align:center ;
+}
