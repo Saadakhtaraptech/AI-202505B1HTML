@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+        }
+        .row{
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .col{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .col .card .img{
+            height: 230px;
+            border: 1px solid yellow;
+        }
+        .content h2{
+            position: relative;
+            bottom: 15px;
+            text-align: center;
+        }
+        .content p{
+            position: relative;
+            bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Honda Civic</h2>
+                <p>500000</p>
+            </div>
+            <!-- <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div>
+            <div class="col"><img src="Image/Car1.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
