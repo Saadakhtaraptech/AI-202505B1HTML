@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
     header .container{
         height: 100px;
         width: 100%;
-        border: 1px solid black;
+        border-bottom: 1px solid rgb(204, 191, 191);
     }
     header .container .navbar{
         height: inherit;
@@ -21,12 +22,12 @@
     header .container .navbar .logo{
         height: inherit;
         width: 15%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     header .container .navbar .nav{
         height: inherit;
         width: 75%;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
     }
     header .container .navbar .logo h2{
         position: relative;
@@ -37,14 +38,59 @@
         padding: 10px;
         position: relative;
         top: 15px;
+        /* position: absolute; */
     }
     header .container .navbar .nav ul li{
         display: inline;
-        background-color: yellow;
+        /* background-color: yellow; */
+        position: relative;
+        left: 100px;
+        bottom: -25px;
         padding: 10px;
-         margin-left: 15px;
+        margin-left: 10px;
     }
-    
+    .Gallery{
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: rgb(231, 231, 228);
+        left: 30px;
+        width: 100px;
+        padding: 10px;
+        display: none;
+    }
+    .dropdown .item{
+        border-bottom: 1px solid black;
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .Gallery:hover .dropdown{
+        display: block;
+    }
+    #cover .background{
+        background:url(Image/plant1.jpg);
+        height: 600px;
+        /* width: 100%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+#cover .col{
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    left: 5%;
+}
+#cover .background .col h1{
+    text-align: center;
+    font-size: 40px;
+}
+#cover .background .col h1 span{
+    color: green;
+}
     </style>
 </head>
 <body>
@@ -60,7 +106,13 @@
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact</li>
-                    <li>Gallery</li>
+                    <li class="Gallery">Gallery
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown">
+                        <div class="item">outdoor plant</div>
+                        <div class="item">indoor plant</div>
+                        </div>
+                    </li>
                     <li>flex</li>
                     <li>Policy</li>
                 </ul>
@@ -68,5 +120,15 @@
             </div>
         </div>
      </header>
+     <!-- header end -->
+      <!-- Cover image section start -->
+       <section id="cover">
+        <div class="background">
+            <div class="col">
+                <h1><span>Welcome</span> To our Plant Nursery</h1>
+            </div>
+        </div>
+       </section>
+       <!-- Cover image section end-->
 </body>
 </html>
