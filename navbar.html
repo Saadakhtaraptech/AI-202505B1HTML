@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+    header .container{
+        height: 100px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    header .container .navbar{
+        height: inherit;
+        width: 80%;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+
+    }
+    header .container .navbar .logo{
+        height: inherit;
+        width: 15%;
+        border: 1px solid red;
+    }
+    header .container .navbar .nav{
+        height: inherit;
+        width: 75%;
+        border: 1px solid yellow;
+    }
+    header .container .navbar .logo h2{
+        position: relative;
+        top: 15px;
+        text-align: center;
+    }
+    header .container .nav .logo .nav ul{
+        padding: 10px;
+        position: relative;
+        top: 15px;
+    }
+    header .container .navbar .nav ul li{
+        display: inline;
+        background-color: yellow;
+        padding: 10px;
+         margin-left: 15px;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- header start -->
+     <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>PlantNest</h2>
+                </div>
+                <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Gallery</li>
+                    <li>flex</li>
+                    <li>Policy</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+     </header>
+</body>
+</html>
