@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+    #cover .background{
+      background:linear-gradient(to bottom, #000000, #043c71);
+      height: 500px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    #cover .background .col{
+      width: 30%;
+      padding: 10px;
+      position: relative;
+      top: 30%;
+      left: 5%;
+    }
+    #cover .background .col h1{
+      text-align: center;
+      font-size: 55px;
+    }
+    .container .navbar .col img{
+      position: relative;
+      bottom: 460px;
+      left: 70px;
+      height: 45px;
+      background-color: transparent;
+    }
+    .container .navbar .nav ul{
+      padding: 10px;
+      position: relative;
+      top: 20px;
+    }
+    .container .nav ul li{
+      position: relative;
+      display: inline;
+      top: -537px;
+      /* display: inline; */
+      color: white;
+      left: 260px;
+      font-size: 16px;
+      padding: 15px;
+      margin: -0px;
+    }
+    .usedcars{
+      position: relative;
+    }
+    /* .dropdown{ */
+      /* position: absolute; */
+      /* display: none; */
+      
+    /* } */
+    .dropdown .item{
+      /* border-bottom: 1px solid black; */
+      padding-bottom: 3px;
+      padding-top: 3px;
+      color: black;
+    }
+    .usedcars:hover .dropdown{
+      display: block;
+      background-color: rgb(231, 231, 228);
+      top: 40px;
+      width: 160px;
+      padding: 10px;
+    }
+    .newcars{
+      position: relative;
+    }
+    .dropdown{
+      position: absolute;
+        background-color: rgb(231, 231, 228);
+        /* left: 30px; */
+        width: 100px;
+        padding: 10px;
+        display: none;
+    }
+    .dropdown .item{
+        /* border-bottom: 1px solid black; */
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+    .newcars:hover .dropdown{
+        display: block;
+        width: 160px;
+    }
+    .bikes{
+      position: relative;
+    }
+    .dropdown{
+      position: absolute;
+      background-color: rgb(231, 231, 228);
+      /* left: 30px; */
+      width: 60px;
+      padding: 10px;
+      display: none;
+    }
+    .dropdown .item{
+      /* border-bottom: 1px solid black; */
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+    .bikes:hover .dropdown{
+      display: block;
+      width: 160px;
+    }
+    .autostore{
+      position: relative;
+    }
+    .dropdown{
+      position: absolute;
+      background-color: rgb(231, 231, 228);
+      /* left: 30px; */
+      width: 180px;
+      padding: 13px;
+      display: none;
+    }
+    .dropdown .item{
+      /* border-bottom: 1px solid black; */
+      padding-bottom: 3px;
+      padding-top: 4px;
+    }
+    .autostore:hover .dropdown{
+      display: block;
+      width: 170px;
+    }
+    .nav ul li:hover{
+      background-color: #f8fcff;
+      color: red;
+    }
+    .more{
+      position: relative;
+    }
+    .dropdown{
+      position: absolute;
+      background-color: rgb(231, 231, 228);
+      left: 0px;
+      width: 60px;
+      /* height: 100px; */
+      padding: 10px;
+      display: none;
+    }
+    .dropdown .item{
+      /* border-bottom: 1px solid black; */
+      padding-bottom: 3px;
+      padding-top: 3px;
+      font-size: 19px;
+    }
+    .more:hover .dropdown{
+      display: block;
+      width: 160px;
+    }
+    .more:hover{
+      background-color: white;
+      color: red;
+    }
+    
+    .postanad{
+      position: relative;
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-size: 16px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px red;
+      color: red;
+      transition: all 0.3s ease;
+      background-color: rgb(197, 75, 75);
+    }
+    .dropdown{
+      position: absolute;
+      border-bottom: 2px solid red;
+      background-color: rgb(231, 231, 228);
+      left: 0px;
+      width: 60px;
+      height: 100px;
+      padding: 10px;
+      display: none;
+    }
+    .dropdown .item{
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+    .postanad:hover .dropdown{
+      display: block;
+      width: 140px;
+    }
+    /* dropdown end */
+    .search-container{
+      position: relative;
+      /* padding: 100px 20px 40px; */
+      padding: 0%;
+      top: -450px;
+    }
+      h1 {
+      font-size: 36px;
+      text-align: center;
+      color: white;
+      /* margin-bottom: 10px; */
+    }
+     p {
+      text-align: center;
+      font-size: 16px;
+      color: #dcdcdc;
+      /* margin-bottom: 40px; */
+    }
+     .search-bar {
+      display: flex;
+      justify-content: center;
+      /* flex-wrap: wrap; */
+      /* gap: 10px; */
+    }
+
+    .search-bar input,
+    .search-bar select {
+      padding: 12px;
+      font-size: 16px;
+      width: 200px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .search-bar button {
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #3e8e41;
+    }
+
+    .advanced-filter {
+      margin-top: 20px;
+    }
+
+    .advanced-filter button {
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 10px 20px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .advanced-filter button:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- header start -->
+  <header>
+  <div class="container">
+    <div class="navbar">
+  <div id="cover">
+    <div class="background">
+      </div>
+     <div class="col"><img src="Image/pakwheel logo.png" alt=""></div>
+     <div class="nav">
+      <ul>
+        <li class="usedcars">Used Cars
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown">
+            <div class="item">Civic</div>
+            <div class="item">Corola</div>
+            <div class="item">Rivo</div>
+          </div>
+        </li>
+        <li class="newcars">New Cars
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown">
+            <div class="item">Civic3</div>
+            <div class="item">Corola2</div>
+            <div class="item">Rivo1</div>
+          </div>
+        </li>
+        <li class="bikes">Bikes
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown">
+            <div class="item">Bike1</div>
+            <div class="item">Bike2</div>
+            <div class="item">Bike3</div>
+          </div>
+        </li>
+        <li class="autostore">Auto Store
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown">
+            <div class="item">PakWheels Autostore</div>
+            <div class="item">Find Auto Parts</div>
+            <div class="item">Sell Car Parts</div>
+          </div>
+        </li>
+        <li>Videos</li>
+        <li>Forums</li>
+        <li>Blog</li>
+        <li class="more">More
+          <i class="fa fa-caret-down"></i>
+          <div class="dropdown">
+            <div class="item">Cool Ride</div>
+            <div class="item">Car Import</div>
+
+            <li class="postanad">Post an Ad
+            <i class="fa fa-caret-down"></i>
+            <div class="dropdown">
+              <div class="item">Sell your Car</div>
+              <div class="item">Sell your Bike</div>
+              <div class="item">Sell Accessories</div>
+            </li>
+        </li>
+      </ul>
+     </div>
+     </div>
+     </div>
+     </div>
+     </header>
+     <!-- header end -->
+      <div class="search-container">
+        <h1>Find Used Cars in Pakistan</h1>
+        <p>With thousands of cars, we have just the right one for you</p>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Car Make or Model">
+          <select>
+            <option>All Cities</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Islamabad</option>
+          </select>
+          <select>
+            <option>Price Range</option>
+            <option>Below 10 Lakhs</option>
+            <option>10-20 Lakhs</option>
+            <option>20+ Lakhs</option>
+      </select>
+            <button>🔍</button>
+        </div>
+
+        <div class="advanced-filter">
+          <button>Advanced Filter &gt;</button>
+        </div>
+      </div>
+</body>
+</html>
