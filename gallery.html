@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(Auto-fit,minmax(250px,1fr));
+            grid-template-rows: 200px;
+            grid-auto-flow: dense;
+            grid-gap: 10px;
+        }
+        .col{
+            display: flex;
+        }
+        img{
+            height: auto;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .col1{
+            grid-column: span 2;
+        }
+        .col2{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .col3{
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col col1"><img src="Image/grid1.jfif" alt=""></div>
+        <div class="col col2"><img src="Image/grid2.jfif" alt=""></div>
+        <div class="col col3"><img src="Image/grid3.jfif" alt=""></div>
+        <div class="col col4"><img src="Image/grid4.jfif" alt=""></div>
+        <div class="col col5"><img src="Image/grid5.jfif" alt=""></div>
+        <div class="col col6"><img src="Image/grid6.jfif" alt=""></div>
+        <div class="col col7"><img src="Image/grid7.jfif" alt=""></div>
+    </div>
+</body>
+</html>
