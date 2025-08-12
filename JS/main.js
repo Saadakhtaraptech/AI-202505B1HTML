@@ -11,8 +11,36 @@
 
 
 
-let a = prompt("enter your first value")
-let b = prompt("enter your second value")
+// let a = prompt("enter your first value")
+// let b = prompt("enter your second value")
 
-let result = a != b
-document.write(result)
+// let result = a === b
+// document.write(result)
+
+// logical operators
+// AND && OR || NOT !
+
+
+let num1 = 20
+let num2 = 20 
+let result = num1 <= num2 && num1 == num2 
+document.getElementById("para").innerHTML = result;
+
+
+// let num1 = 20;
+// let num2 = 30;
+// let num  = 10;\
+
+
+//if
+
+let name = "Ustad Arain"
+if(name == "Ustad Arain"){
+    document.write("ayen apka intezar tha")
+}
+
+else{
+    document.write( "chal nikal")
+}
+
+
