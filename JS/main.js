@@ -34,13 +34,30 @@ document.getElementById("para").innerHTML = result;
 
 //if
 
-let name = "Ustad Arain"
-if(name == "Ustad Arain"){
-    document.write("ayen apka intezar tha")
+// let name = "Ustad Arain"
+// if(name == "Ustad Arain"){
+//     document.write("ayen apka intezar tha")
+// }
+
+// else{
+//     document.write( "chal nikal")
+// }
+
+
+// if assignment
+
+// let number = parseFloat(prompt("Enter the positive value:"));
+
+// if (number > 0) {
+//     document.getElementById("para").innerHTML = "The number is positive: " + number;
+// } else {
+//     document.getElementById("para").innerHTML = "The number is not positive.";
+// }
+
+let number = prompt("Enter a positive number:");
+
+if (number > 0) {
+    document.getElementById("para").innerHTML = "The number is positive: " + number;
+} else {
+    document.getElementById("para").innerHTML = "The number is not positive.";
 }
-
-else{
-    document.write( "chal nikal")
-}
-
-
