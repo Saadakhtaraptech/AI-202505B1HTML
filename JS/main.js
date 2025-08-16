@@ -21,10 +21,10 @@
 // AND && OR || NOT !
 
 
-let num1 = 20
-let num2 = 20 
-let result = num1 <= num2 && num1 == num2 
-document.getElementById("para").innerHTML = result;
+// let num1 = 20
+// let num2 = 20 
+// let result = num1 <= num2 && num1 == num2 
+// document.getElementById("para").innerHTML = result;
 
 
 // let num1 = 20;
@@ -34,13 +34,13 @@ document.getElementById("para").innerHTML = result;
 
 //if
 
-// let name = "Ustad Arain"
-// if(name == "Ustad Arain"){
-//     document.write("ayen apka intezar tha")
+// let name = prompt("aap ka naam?");
+// if(name == "gulzaman arain"){
+//     document.write("veryyyy goooood");
 // }
 
 // else{
-//     document.write( "chal nikal")
+//     document.write( "very veryy very goood");
 // }
 
 
@@ -54,10 +54,78 @@ document.getElementById("para").innerHTML = result;
 //     document.getElementById("para").innerHTML = "The number is not positive.";
 // }
 
-let number = prompt("Enter a positive number:");
+// let number = prompt("Enter a positive number:");
 
-if (number > 0) {
-    document.getElementById("para").innerHTML = "The number is positive: " + number;
-} else {
-    document.getElementById("para").innerHTML = "The number is not positive.";
-}
+// if (number > 0) {
+//     document.getElementById("para").innerHTML = "The number is positive: " + number;
+// } else {
+//     document.getElementById("para").innerHTML = "The number is not positive.";
+// }
+
+// else if
+
+// let language = prompt("Enter your fav language ");
+
+// if (language == "java script") {
+//     document.write("You are a web developer");
+
+// }
+
+// else if (language == "python") {
+//     document.write("You are a python developer");
+// }
+
+// else if (language == "bootstrap") {
+//     document.write("You are a bootstrap developer");
+// }
+
+// else(
+//     document.write("not matched")
+// 
+
+
+// operator
+
+// let num1 = prompt("Enter your first value");
+// let num2 = prompt("Enter your second value");
+// let operator = prompt("Enter the operator");
+
+// if (opr == "+") {
+//     document.write("addition",num1 + num2);
+// }
+
+// else if (opr == "-") {
+//     document.write(num1 - num2);
+// }
+// else if (opr == "*") {
+//     document.write(num1 * num2);
+// }
+// else if (opr == "/") {
+//     document.write(num1 / num2);
+// }
+// else if (opr == "%") {
+//     document.write(num1 % num2);
+// }
+
+// else {
+//     document.write("Invalid operator");
+// }
+
+
+// nested if else 
+
+    let nationality = prompt("Enter your nationality");
+
+    let age = prompt("Enter your age");
+
+    if(nationality == "Pakistani") {
+        if(age >= 18) {
+            document.write("You are eligible to vote");
+        } else {
+            document.write("You are not eligible to vote");
+        }
+    }
+
+    else(
+        document.write("only allow pakistani")
+    )
