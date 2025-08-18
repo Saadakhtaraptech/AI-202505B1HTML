@@ -114,18 +114,61 @@
 
 // nested if else 
 
-    let nationality = prompt("Enter your nationality");
+    // let nationality = prompt("Enter your nationality");
 
-    let age = prompt("Enter your age");
+    // let age = prompt("Enter your age");
 
-    if(nationality == "Pakistani") {
-        if(age >= 18) {
-            document.write("You are eligible to vote");
-        } else {
-            document.write("You are not eligible to vote");
-        }
+    // if(nationality == "Pakistani") {
+    //     if(age >= 18) {
+    //         document.write("You are eligible to vote");
+    //     } else {
+    //         document.write("You are not eligible to vote");
+    //     }
+    // }
+
+    // else(
+    //     document.write("only allow pakistani")
+    // )
+
+
+
+    // assign nest if
+
+    // let name = prompt("Enter your name")
+    // let gmail = prompt("Enter your gmail")
+    // let password = prompt("Enter your password")
+    // let confirmPassword = prompt("Confirm your password")
+
+    // if (name == "saad akhtar") {
+    //     if (gmail == "saadakhtar@gmail.com") {
+    //         if (password == "12345") {
+    //             if (confirmPassword == "12345") {
+    //                 document.getElementById("para").innerHTML = "Welcome, " + name + "! You have successfully logged in."; 
+    //             }
+    //         }
+    //     }
+    // }
+
+
+let name = prompt("Enter your name");
+let email = prompt("Enter your email");
+let password = prompt("Enter your password");
+let confirmPassword = prompt("Confirm your password");
+
+if (name === "saad") {
+  if (email === "saad@gmail.com") {
+    if (password === "saad12") {
+      if (confirmPassword === "saad12") {
+        document.write("Welcome saad akhtar");
+      } else {
+        document.write("Confirm password incorrect");
+      }
+    } else {
+      document.write("Password incorrect");
     }
-
-    else(
-        document.write("only allow pakistani")
-    )
+  } else {
+    document.write("Email incorrect");
+  }
+} else {
+  document.write("Name incorrect");
+}
