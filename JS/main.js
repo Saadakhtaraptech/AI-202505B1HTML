@@ -173,3 +173,77 @@
 // }
 
 
+// switch case
+
+// let language = prompt("Enter your fav language");
+
+// switch (language) {
+//     case "java script":
+//     document.write('You are a web developer');
+//     break;
+
+//     case "python":
+//     document.write('You are a python developer');
+//     break;
+
+//     case "bootstrap":
+//     document.write('You are a bootstrap developer');
+//     break;
+
+//     default:
+//     document.write('not matched');
+//     break;
+// }
+
+
+// vowel and consonant
+
+// let vowel = prompt("enter a letter");
+
+// switch (vowel) {
+//     case "a":
+//     document.write("This is vowel");
+//     break;
+
+//     case "e":
+//     document.write("This is vowel");
+//     break;
+
+//     case "i":
+//     document.write("This is vowel");
+    
+//     case "o":
+//     document.write("This is vowel");
+//     break;
+
+//     case "u":
+//     document.write("This is vowel");
+//     break;
+
+//     default:
+//     document.write("This is consonant");
+// }
+
+
+// for loop
+
+// for (let i = 1; i <= 10; i++) {
+//     document.write(i , "This is loop <br>");
+// }
+
+// for (let i = 10; i >= 1; i--)
+//     document.write(i , "This is loop <br>");
+
+// for loop tab
+
+let table = prompt("Enter your table number"); 
+for (let i = 1; i <= 10; i++){
+    document.write(table , " x ", i, " = " , table * i, "<br>");
+}
+
+// while loop
+// let a = 1;
+// while (a <= 10) {
+//     document.write( "This is while loop <br>");
+//     i++;
+// }
