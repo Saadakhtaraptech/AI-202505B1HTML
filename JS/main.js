@@ -236,10 +236,10 @@
 
 // for loop tab
 
-let table = prompt("Enter your table number"); 
-for (let i = 1; i <= 10; i++){
-    document.write(table , " x ", i, " = " , table * i, "<br>");
-}
+// let table = prompt("Enter your table number"); 
+// for (let i = 1; i <= 10; i++){
+//     document.write(table , " x ", i, " = " , table * i, "<br>");
+// }
 
 // while loop
 // let a = 1;
@@ -247,3 +247,12 @@ for (let i = 1; i <= 10; i++){
 //     document.write( "This is while loop <br>");
 //     i++;
 // }
+
+// do while loop
+
+// let a = 10;
+
+// do {
+//     document.write( a, ":This is do while loop <br>");
+//     a--;
+// }while (a <= -5);
