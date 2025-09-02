@@ -39,11 +39,33 @@
 
 // method array
 
-let color = ["red", "green", "blue", "yellow", "black", "white"];
+// let color = ["red", "green", "blue", "yellow", "black", "white"];
 
-color.push("purple")  // add last
-color.unshift("pink") // add first
-color.pop()          // remove last
-color.shift()       // remove first
-color.splice(2, 3) // remove specific index
-document.write(color, "<br>")
+// color.push("purple")  // add last
+// color.unshift("pink") // add first
+// color.pop()          // remove last
+// color.shift()       // remove first
+// color.splice(2, 3) // remove specific index
+// document.write(color, "<br>")
+
+
+
+// Invoke Function 
+
+// let myName = prompt("Enter Your Name")
+// function mypp(Name){
+//     document.write(Name, "<br>")
+// }
+
+// mypp(myName)
+// mypp("Hello")
+
+
+// events 
+
+// let myapp = (num1, num2) => document.write(num1 + num2)
+
+
+let btn  = document.getElementById("btn")
+btn.onclick = () => document.write("Hello World")
+// btn.onmouseup = () => document.write("Hello World onmouseup")
