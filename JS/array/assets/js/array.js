@@ -39,7 +39,7 @@
 
 // method array
 
-let color = ["red", "green", "blue", "yellow", "black", "white"];
+// let color = ["red", "green", "blue", "yellow", "black", "white"];
 
 // color.push("purple")  // add last
 // color.unshift("pink") // add first
@@ -51,7 +51,7 @@ let color = ["red", "green", "blue", "yellow", "black", "white"];
 // color.reverse()    // reverse array
 // color.indexOf("green") // find index of element
 // color.includes("blue") // check if element exists
-document.write(color, "<br>")
+// document.write(color, "<br>")
 
 
 
@@ -112,3 +112,17 @@ document.write(color, "<br>")
 
   // End table
 //   document.write("</table>");
+
+
+// new assignment
+
+// let myapp = (num1,num2) => document.write(num1-num2)
+
+
+let btn = document.getElementById("btn");
+
+btn.addEventListener("mouseclick", function(){
+
+})
+
+btn.addEventListener("mouseover", ()=>document.getElementById("p").innerHTML = "Mouse Over")
