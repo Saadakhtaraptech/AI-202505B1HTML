@@ -1,0 +1,29 @@
+[
+    {
+        "p_id": 1,
+        "p_name": "watch",
+        "p_price": 200,
+        "p_qty": 5,
+        "p_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q8tDRNSGOaBOUTKecyfAAGzv-HR-Nv8Pag&s"
+    },
+
+
+    {
+        "p_id": 2,
+        "p_name": "mouse",
+        "p_price": 300,
+        "p_qty": 5,
+        "p_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q8tDRNSGOaBOUTKecyfAAGzv-HR-Nv8Pag&s"
+    },
+
+
+
+    {
+        "p_id": 4,
+        "p_name": "laptop",
+        "p_price": 500,
+        "p_qty": 5,
+        "p_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q8tDRNSGOaBOUTKecyfAAGzv-HR-Nv8Pag&s"
+    }
+
+]

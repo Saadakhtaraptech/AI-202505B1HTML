@@ -66,6 +66,36 @@
 // let myapp = (num1, num2) => document.write(num1 + num2)
 
 
-let btn  = document.getElementById("btn")
-btn.onclick = () => document.write("Hello World")
+// let btn  = document.getElementById("btn")
+// btn.onclick = () => document.write("Hello World")
 // btn.onmouseup = () => document.write("Hello World onmouseup")
+
+
+// window events
+
+// window.onload = () => {
+//     alert("welcome")
+// }
+
+// window.onresize = () => {
+//     console.log("window is resize")
+// }
+
+
+// let anchor = document.getElementById("anchor")
+// anchor.onclick = function (){}
+
+
+// object \
+
+let student = {
+id:"804",
+name:"saad",
+email:"saad@gmial.com",
+age:"18"
+}
+
+
+for(value in student){
+    document.write(value,":",student[value], "<br>" )
+}

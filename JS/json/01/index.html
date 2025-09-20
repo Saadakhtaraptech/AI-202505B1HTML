@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main" style="display: flex; justify-content: space-evenly; align-items: center" id="row">
+        
+    </div>
+    
+
+
+
+
+    <script>
+        let html ="";
+    fetch('data.json')
+      .then(response => response.json())
+      .then (json => {
+        for(data of json){
+         html += `
+         <div class="box" style="width: 250px; height: 350px; box-shadow: 0px 0px 2px 2px rgb(217, 215, 215);">
+    <div class="card">
+        <img src="${data.p_img}" alt="" style="width: 250px; height: 100%;">
+        <h3>${data.p_name}</h3>
+        <h3>${data.p_price}</h3>
+        </div>
+    </div>
+         `
+        }
+        document.getElementById('row').innerHTML = html;
+      })
+
+
+      
+    </script>
+
+</body>
+</html>
