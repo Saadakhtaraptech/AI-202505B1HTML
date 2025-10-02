@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #btn{
+        position: absolute;
+        left: 70px;
+        top: 160px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="btn">on</button>
+  <img src="./off.jpg" alt="bulb" id="img">
+
+  <script>
+    let btn = document.getElementById("btn");
+    let image = document.getElementById("img");
+
+    btn.addEventListener("click", function() {
+      if (image.src.includes("/03/on.jpg")) {
+        image.src = "/03/off.jpg";
+        btn.innerHTML = "on";
+      } else {
+        image.src = "/03/on.jpg";
+        btn.innerHTML = "off";
+      }
+    });
+  </script>
+
+</body>
+</html>
