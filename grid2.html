@@ -1,74 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<style>
-    /* .container{
-            display: grid;
-            grid-template-columns: repeat(Auto-fit,minmax(250px,1fr));
-            grid-template-rows: 200px;
-            grid-auto-flow: dense;
-            grid-gap: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery2</title>
+    <style>
+        .container-fluid{
+            /* display: fixed; */
         }
-        .col{
-            display: flex;
-        }
-        img{
-            height: auto;
-            width: 100%;
-            border-radius: 10px;
-        }
-        .col1{
-            grid-column: span 2;
-        }
-        .col2{
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-        .col3{
-            grid-row: span 2;
-            grid-column: span 2;
-        } */
-    .container{
-        display: flex;
-        grid-template-columns: repeat(Auto-fit,minmax(250px,1fr));
-        grid-template-rows: 200px;
-        grid-auto-flow: dense;
-        grid-gap: 10px;
-    }
-    .col{
-        display: flex;
-    }
-    img{
-        height: auto;
-        width: 100%;
-        border-radius: 10px;
-    }
-    .col1{
-        grid-column: span 2;
-    }
-    .col2{
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-    .col3{
-        grid-row: span 2;
-        grid-column: span 2;
-    }
-</style>
+        .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.col{
+    /* display: flex; */
+}
+
+.container .col img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.col-1{
+    margin-top: 100px;
+    grid-column: span 1;
+}
+
+.col-2{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.col-3{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.col-4{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.col-5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.col6{
+    grid-column: span 2;
+}
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="col col1"><img src="Image/c1.jpg" alt=""></div>
-    <div class="col col2"><img src="Image/C2.jpg" alt=""></div>
-    <div class="col col3"><img src="Image/Car1.jpg" alt=""></div>
-    <div class="col col4"><img src="Image/pak23.png" alt=""></div>
-    <div class="col col5"><img src="Image/plant1.jpg" alt=""></div>
-    <div class="col col6"><img src="Image/plant1.jpg" alt=""></div>
-    <div class="col col7"><img src="Image/plant1.jpg" alt=""></div>
-</div>
+
+    <div class="container">
+        <div class="col col-1"><img src="Image/grid1.jfif" alt="" style="width: 320px; height: 170px; margin-top: 110px; margin-left: 110px;"></div>
+        <div class="col col-2"><img src="Image/grid2.jfif" alt="" style="width: 250px; margin-top: 73px; margin-left: 135px;"></div>
+        <!-- <div class="col col-3"><img src="Image/grid3.jfif" alt=""></div> -->
+         <div class="col col-5"><img src="Image/grid5.jfif" alt="" style="width: 280px; height: 120px; margin-left: 280px; margin-top: 270px; "></div>
+        <!-- <div class="col col-4"><img src="Image/grid4.jfif" alt="" style="width: 320px; height: 170px; margin-left: 108px; margin-top: -300px;"></div> -->
+        <div class="col col-5"><img src="Image/grid5.jfif" alt= "" style="margin-top: -175px; width: 280px; height: 350px; margin-left: 910px;"></div>
+        <div class="col col-6"><img src="Image/grid6.jfif" alt="" style="width: 440px; height: 300px; margin-left: 450px; margin-top: 60px;"></div>
+        <!-- <div class="col col-7"><img src="Image/grid7.jfif" alt=""></div> -->
+    </div>
+    <div class="col"><img src="Image/grid5.jfif" alt="" style="display: grid; margin-left: 720px; margin-top: -731px; height: 220px; 
+    width: 300px; border-radius: 10px;"></div>
+
+        <div class="col4"><img src="Image/grid4.jfif" alt="" style="width: 320px; height: 170px; margin-left: 108px; margin-top: 148px; display: grid; border-radius: 10px;"></div>
+
+        <div class="col1"><img src="Image/grid1.jfif" alt="" style="width: 320px; height: 250px; margin-top: 20px; margin-left: 270px; 
+        display: grid; border-radius: 10px;"></div>
+
+        <div class="col col-6"><img src="Image/grid6.jfif" alt="" style="width: 270px; height: 250px; margin-left: 620px; margin-top: -250px; display: grid; border-radius: 10px;"></div>
+    </div>
+
 </body>
 </html>
