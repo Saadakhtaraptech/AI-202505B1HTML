@@ -1,115 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>gallery2</title>
-    <style>
-        .container-fluid{
-            /* display: fixed; */
-        }
-=======
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
->>>>>>> 4b719e8cb3fd3c70fb7f4251627b6f1e634965f5
-        .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-template-rows: 200px;
-    grid-auto-flow: dense;
-    grid-gap: 10px;
-}
-.col{
-<<<<<<< HEAD
-    /* display: flex; */
-=======
-    display: flex;
->>>>>>> 4b719e8cb3fd3c70fb7f4251627b6f1e634965f5
-}
-
-.container .col img{
-    height: auto;
-    width: 100%;
-    border-radius: 10px;
-    /* border: 1px solid black; */
-}
-
-.col-1{
-<<<<<<< HEAD
-    margin-top: 100px;
-    gr
-}
-
-.col-2{
-    grid-column: span 1;
-    grid-row: span 2;
-
-    grid-column: span 2;
-}
-
-.col-2{
-    grid-column: span 2;
-    grid-row: span 3;
->>>>>>> 4b719e8cb3fd3c70fb7f4251627b6f1e634965f5
-}
-
-.col-3{
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.col-4{
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.col-5{
-    grid-column: span 2;
-    grid-row: span 2;
-}
-<<<<<<< HEAD
-.col6{
-    grid-column: span 2;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body>
+<body class="bg-light">
 
-    <div class="container">
-        <div class="col col-1"><img src="Image/grid1.jfif" alt="" style="width: 320px; height: 170px; margin-top: 110px; margin-left: 110px;"></div>
-        <div class="col col-2"><img src="Image/grid2.jfif" alt="" style="width: 250px; margin-top: 73px; margin-left: 135px;"></div>
-        <!-- <div class="col col-3"><img src="Image/grid3.jfif" alt=""></div> -->
-         <div class="col col-5"><img src="Image/grid5.jfif" alt="" style="width: 280px; height: 120px; margin-left: 280px; margin-top: 270px; "></div>
-        <!-- <div class="col col-4"><img src="Image/grid4.jfif" alt="" style="width: 320px; height: 170px; margin-left: 108px; margin-top: -300px;"></div> -->
-        <div class="col col-5"><img src="Image/grid5.jfif" alt= "" style="margin-top: -175px; width: 280px; height: 350px; margin-left: 910px;"></div>
-        <div class="col col-6"><img src="Image/grid6.jfif" alt="" style="width: 440px; height: 300px; margin-left: 450px; margin-top: 60px;"></div>
-        <!-- <div class="col col-7"><img src="Image/grid7.jfif" alt=""></div> -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4 fw-bold">Photo Gallery</h2>
+
+    <div class="row g-4 gallery">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=1" alt="Image 1" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=2" alt="Image 2" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=3" alt="Image 3" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=4" alt="Image 4" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=5" alt="Image 5" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=6" alt="Image 6" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=7" alt="Image 7" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://picsum.photos/400?random=8" alt="Image 8" class="img-fluid">
+      </div>
     </div>
-    <div class="col"><img src="Image/grid5.jfif" alt="" style="display: grid; margin-left: 720px; margin-top: -731px; height: 220px; 
-    width: 300px; border-radius: 10px;"></div>
+  </div>
 
-        <div class="col4"><img src="Image/grid4.jfif" alt="" style="width: 320px; height: 170px; margin-left: 108px; margin-top: 148px; display: grid; border-radius: 10px;"></div>
-
-        <div class="col1"><img src="Image/grid1.jfif" alt="" style="width: 320px; height: 250px; margin-top: 20px; margin-left: 270px; 
-        display: grid; border-radius: 10px;"></div>
-
-        <div class="col col-6"><img src="Image/grid6.jfif" alt="" style="width: 270px; height: 250px; margin-left: 620px; margin-top: -250px; display: grid; border-radius: 10px;"></div>
-    </div>
-
-=======
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="col col-1"><img src="Image/grid1.jf" alt=""></div>
-        <div class="col col-2"><img src="Image/grid2.jfif" alt=""></div>
-        <div class="col col-3"><img src="Image/grid3.jfif" alt=""></div>
-        <div class="col col-4"><img src="Image/grid4.jfif" alt=""></div>
-        <div class="col col-5"><img src="Image/grid5.jfif" alt=""></div>
-        
-    </div>
->>>>>>> 4b719e8cb3fd3c70fb7f4251627b6f1e634965f5
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
