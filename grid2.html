@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Gallery</title>
@@ -18,6 +19,74 @@
       transform: scale(1.05);
     }
   </style>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery2</title>
+    <style>
+        .container-fluid{
+            /* display: fixed; */
+        }
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+.col{
+
+    /* display: flex; */
+
+    display: flex;
+
+}
+
+.container .col img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.col-1{
+    margin-top: 100px;
+}
+
+.col-2{
+    grid-column: span 1;
+    grid-row: span 2;
+
+    grid-column: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.col-3{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.col-4{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.col-5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.col6{
+    grid-column: span 2;
+}
+    </style>
+>>>>>>> 1158e67b1e15f5673880dab13ad196ffaceb2a73
 </head>
 <body class="bg-light">
 
@@ -52,7 +121,27 @@
     </div>
   </div>
 
+<<<<<<< HEAD
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+=======
+        <div class="col4"><img src="Image/grid4.jfif" alt="" style="width: 320px; height: 170px; margin-left: 108px; margin-top: 148px; display: grid; border-radius: 10px;"></div>
+
+        <div class="col1"><img src="Image/grid1.jfif" alt="" style="width: 320px; height: 250px; margin-top: 20px; margin-left: 270px; 
+        display: grid; border-radius: 10px;"></div>
+
+        <div class="col col-6"><img src="Image/grid6.jfif" alt="" style="width: 270px; height: 250px; margin-left: 620px; margin-top: -250px; display: grid; border-radius: 10px;"></div>
+    </div>
+
 </body>
-</html>
+    <!-- <div class="container">
+        <div class="col col-1"><img src="Image/grid1.jf" alt=""></div>
+        <div class="col col-2"><img src="Image/grid2.jfif" alt=""></div>
+        <div class="col col-3"><img src="Image/grid3.jfif" alt=""></div>
+        <div class="col col-4"><img src="Image/grid4.jfif" alt=""></div>
+        <div class="col col-5"><img src="Image/grid5.jfif" alt=""></div> -->
+        
+    </div>
+>>>>>>> 1158e67b1e15f5673880dab13ad196ffaceb2a73
+</body>
+</html>  -->
