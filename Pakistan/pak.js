@@ -9,7 +9,7 @@ $(document).ready(function(){
         })
     }
 
-    $("#home").click(function(e){
+    $("#pak").click(function(e){
         e.preventDefault();
         loadpage("Pakistan")
     })
@@ -44,5 +44,5 @@ $(document).ready(function(){
         loadpage("Inline")
     })
 
-    loadpage("home")
+    loadpage("Pakistan")
 })
