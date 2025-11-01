@@ -9,11 +9,11 @@ $(document).ready(function(){
         })
     }
 
-    $("#home").click(function(e){
+    $("#index").click(function(e){
         e.preventDefault();
-        loadpage("index")
+        loadpage("home")
     })
-
+         
     $("#about").click(function(e){
         e.preventDefault();
         loadpage("about")

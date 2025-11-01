@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $("#home").click(function(e){
         e.preventDefault();
-        loadpage("home")
+        loadpage("index")
     })
 
     $("#about").click(function(e){
