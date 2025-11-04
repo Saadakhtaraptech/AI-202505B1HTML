@@ -46,8 +46,9 @@ $(document).ready(function(){
   <img src="${users.p_image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${users.p_name}</h5>
+    <h5 class="card-title">${users.p_price}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary veiw" data-id='${users.id}>Go somewhere</a>
   </div>
 </div>`
                 })
